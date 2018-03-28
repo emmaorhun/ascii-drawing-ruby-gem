@@ -12,6 +12,7 @@ module AsciiDrawingGenerator
         |    ಠ      ಠ    |
         |   ==  ︿  ==   |
          \              /')
+
         heads.push('
             ^        ^
           /   \____/   \
@@ -94,39 +95,74 @@ module AsciiDrawingGenerator
     end
 
     def self.draw_human
-      heads = []
+
+      hair = []
+      eyes = []
+      mouth = []
       bodies = []
-      heads.push('
-        ______  ___
-       /      \/    \
-      /              \
-     |  ___________  |
-     | | ___   ___ | |
-     | | (｡◕) (｡◕) | |
-      \|     っ    |/
-       |   〇      |
-        \_________/')
-       heads.push('
-     /\/\/\/\/\/\/\/\
-     |               |
-     |  ___________  |
-     | | ___   ___ | |
-     | | (●｡) (●｡) | |
-      \|  ミ っ ミ |/
-       |    ‿      |
-        \_________/')
+
+      hair.push('
+         ______  ___
+        /      \/    \
+       /              \
+      |  ___________  |')
+
+       hair.push('
+      /\/\/\/\/\/\/\/\
+      |               |
+      |  ___________  |')
+
+      eyes.push('
+      | | ___   ___ | |
+      | | (｡◕) (｡◕) | |')
+
+       eyes.push('
+      | | ___   ___ | |
+      | | (●｡) (●｡) | |')
+
+
+      mouth.push('
+       \|     っ    |/
+        |   〇      |
+         \_________/')
+
+      mouth.push('
+       \|  ミ っ ミ |/
+        |    ‿      |
+         \_________/')
+
+
         bodies.push('
-           |   |
-        ___=====___
-       /           \
-      /  |       |  \ ')
+            |   |
+         ___=====___
+        /           \
+       /  |       |  \ ')
       bodies.push('
-           |   |
-        ___*****___
-       /-----------\
-      /--|-------|--\ ')
-      heads[rand(heads.size)]+bodies[rand(bodies.size)]
+            |   |
+         ___*****___
+        /-----------\
+       /--|-------|--\ ')
+
+      hair[rand(hair.size)]+eyes[rand(eyes.size)]+mouth[rand(mouth.size)]+bodies[rand(bodies.size)]
+
     end
-    
+
+    def self.dead_cat
+
+        dead_cat ='
+           / \      / \
+          / ∆ \____/ ∆ \
+         /              \
+        /    X      X    \
+        \    ~~ ▽ ~~     /
+         \      __      /
+          )============(
+         /*    *   *   *\
+        /  * | |   | |*  \
+        |*   | | * | |  *|
+        \____OOO___OOO___/'
+
+    end
+
   end
 end

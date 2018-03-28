@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.name          = "ascii_drawing_generator"
   spec.version       = AsciiDrawingGenerator::VERSION
   spec.authors       = ["Emma Orhun"]
-  spec.email         = ["emmaorhun@shopify.com"]
+  spec.email         = ["emma.orhun@shopify.com"]
 
   spec.summary       = "Random ASCII cat and human generator"
   spec.description   = "Ruby gem that randomly generates cat and human ASCII drawings"
@@ -16,12 +16,7 @@ Gem::Specification.new do |spec|
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.
-  if spec.respond_to?(:metadata)
-    spec.metadata["allowed_push_host"] = "TODO: Set to 'http://mygemserver.com'"
-  else
-    raise "RubyGems 2.0 or newer is required to protect against " \
-      "public gem pushes."
-  end
+
 
   spec.files         = ["lib/ascii_drawing_generator.rb"]
   spec.bindir        = "exe"

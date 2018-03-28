@@ -9,9 +9,9 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Emma Orhun"]
   spec.email         = ["emmaorhun@shopify.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because RubyGems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = "Random ASCII cat and human generator"
+  spec.description   = "Ruby gem that randomly generates cat and human ASCII drawings"
+  spec.homepage      = "https://rubygems.org/ascii_drawing_generator"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
@@ -23,9 +23,7 @@ Gem::Specification.new do |spec|
       "public gem pushes."
   end
 
-  spec.files         = `git ls-files -z`.split("\x0").reject do |f|
-    f.match(%r{^(test|spec|features)/})
-  end
+  spec.files         = ["lib/ascii_drawing_generator.rb"]
   spec.bindir        = "exe"
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]

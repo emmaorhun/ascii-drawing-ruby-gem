@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["emma.orhun@shopify.com"]
 
   spec.summary       = "Random ASCII cat and human generator"
-  spec.description   = "Ruby gem that randomly generates cat and human ASCII drawings"
+  spec.description   = "Methods:"
   spec.homepage      = "https://rubygems.org/ascii_drawing_generator"
   spec.license       = "MIT"
 
